@@ -17,7 +17,7 @@ console.log('다 찾았니?');
 
 // ECMA 2017 에서 anync와 await이 추가되면서 프로미스의 모양이 변함.
 
-async foo() => {
+async function foo() {
     try{
         const user = await Users.findOne('zero');
         const updateUser = await Users.update('zero', 'nero');
@@ -35,5 +35,5 @@ async foo() => {
     console.log('다 찾았니');
 };
 
-foo()
+foo();
 
